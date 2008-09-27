@@ -2055,7 +2055,7 @@ it to your friends.
             locale.setlocale(locale.LC_ALL, '')
         except:
             pass
-        languageDir=os.path.join(ankiqt.modDir, "locale")
+        languageDir="/usr/share/locale"
         self.languageTrans = gettext.translation('ankiqt', languageDir,
                                             languages=[self.config["interfaceLang"]],
                                             fallback=True)

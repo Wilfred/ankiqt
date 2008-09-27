@@ -1,0 +1,125 @@
+anki (0.9.7.6-1) unstable; urgency=low
+
+  * New release
+
+ -- Damien Elmes <resolve@repose.cx>  Tue, 02 Sep 2008 00:22:19 +0900
+
+anki (0.9.7.5-1) unstable; urgency=low
+
+  * New release
+
+ -- Damien Elmes <resolve@repose.cx>  Mon, 01 Sep 2008 01:32:09 +0900
+
+anki (0.9.7.4-1) unstable; urgency=low
+
+  * New release
+
+ -- Damien Elmes <resolve@repose.cx>  Sat, 30 Aug 2008 01:09:16 +0900
+
+anki (0.9.7.3-1) unstable; urgency=low
+
+  * New release
+
+ -- Damien Elmes <resolve@repose.cx>  Mon, 25 Aug 2008 19:11:24 +0900
+
+anki (0.9.7.2-1) unstable; urgency=low
+
+  * New release
+
+ -- Damien Elmes <resolve@repose.cx>  Mon, 25 Aug 2008 03:36:04 +0900
+
+anki (0.9.7.1-1) unstable; urgency=low
+
+  * New release
+
+ -- Damien Elmes <resolve@repose.cx>  Sat, 23 Aug 2008 05:36:39 +0900
+
+anki (0.9.7-1) unstable; urgency=low
+
+  * New release
+
+ -- Damien Elmes <resolve@repose.cx>  Fri, 22 Aug 2008 04:27:48 +0900
+
+anki (0.9.6-1) unstable; urgency=low
+
+  * New upstream release
+  * Event handler treatment of objects fixed in upstream release (closes:
+    #486295)
+  * Uncloseable dialogs fixed in upstream release (closes: #483315)
+  * debian/control: update python-qt4 dependency for anki from >= 4.2 to >=
+    4.4
+  * debian/control: Standards-Version bumped to 3.8.0, no changes necessary
+  * anki.desktop: Upstream removed obsolete encoding field, patching no longer
+    necessary
+  * Upstream removed shell bangs from all Python modules except
+    ankiqt/__init__.py so only that one still needs patching
+
+ -- Andreas Bombe <aeb@debian.org>  Fri, 18 Jul 2008 03:42:08 +0200
+
+anki (0.9.5.7-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Bombe <aeb@debian.org>  Sun, 06 Apr 2008 17:05:49 +0200
+
+anki (0.9.5.5-1) unstable; urgency=low
+
+  * New upstream release now licensed under GPL 3 or later
+  * debian/copyright: adapt to upstream relicense
+  * debian/rules: install CREDITS as documentation
+  * debian/rules: move upstream debian/ files out of the way on build and
+    restore in clean, file removals aren't recorded in Debian diffs
+
+ -- Andreas Bombe <aeb@debian.org>  Mon, 31 Mar 2008 00:29:22 +0200
+
+anki (0.9.5.4-2) unstable; urgency=low
+
+  * Add python-sqlite2 to Build-Depends-Indep, now it really builds in a clean
+    chroot and fixes the FTBFS
+
+ -- Andreas Bombe <aeb@debian.org>  Tue, 11 Mar 2008 14:12:35 +0100
+
+anki (0.9.5.4-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control: add Suggests dvipng, it's used for rendering LaTeX
+    snippets
+  * debian/control: add python-sqlalchemy to Build-Depends-Indep, fixes FTBFS
+    (closes: #470334)
+
+ -- Andreas Bombe <aeb@debian.org>  Mon, 10 Mar 2008 22:52:15 +0100
+
+anki (0.9.5.2-1) unstable; urgency=low
+
+  * New upstream release fixes some serious bugs with card intervals
+  * debian/rules: clean target now also removes all .pyc and .pyo files
+    generated during a possible execution of the uninstalled anki
+
+ -- Andreas Bombe <aeb@debian.org>  Fri, 29 Feb 2008 01:07:37 +0100
+
+anki (0.9.5-2) unstable; urgency=low
+
+  * debian/control: Forgot to add python-pysqlite2 to Depends, required for
+    Python versions < 2.5 (closes: #468347)
+
+ -- Andreas Bombe <aeb@debian.org>  Thu, 28 Feb 2008 16:33:12 +0100
+
+anki (0.9.5-1) unstable; urgency=low
+
+  * New upstream release
+  * Remove shell bangs from all Python modules that had them for aesthetic
+    reasons, no lintian warnings anymore
+  * debian/rules: remove execute permissions from ankiqt/__init__.py for the
+    same reason
+  * ankiqt/ui/main.py: make setupAutoUpdate() return without doing anything to
+    avoid bugging the user about new upstream versions on every start
+  * debian/control: move all build depends except debhelper to
+    Build-Depends-Indep
+
+ -- Andreas Bombe <aeb@debian.org>  Thu, 28 Feb 2008 02:31:56 +0100
+
+anki (0.9.4-1) unstable; urgency=low
+
+  * Initial release. (closes: #452067)
+
+ -- Andreas Bombe <aeb@debian.org>  Mon, 25 Feb 2008 00:28:52 +0100
