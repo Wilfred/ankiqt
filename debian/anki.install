@@ -11,4 +11,3 @@ ankiqt/locale/*/				usr/share/locale
 libanki/anki/locale/*/				usr/share/locale
 debian/anki.xpm					usr/share/pixmaps
 anki.desktop					usr/share/applications
-icons_rc.py                                     usr/share/anki/ankiqt
