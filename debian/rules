@@ -1,5 +1,7 @@
 #!/usr/bin/make -f
 
+build:
+
 movedebfiles:
 	dh_testdir
 	-tar -cf upstreamdebfiles.tar debian/dirs debian/docs debian/pycompat
@@ -40,4 +42,4 @@ clean: unmovedebfiles
 	find -name \*.py[co] -exec rm {} \;
 	dh_clean
 
-.PHONY: clean binary binary-arch binary-indep movedebfiles unmovedebfiles
+.PHONY: build clean binary binary-arch binary-indep movedebfiles unmovedebfiles
