@@ -4,7 +4,7 @@ Section: misc
 Priority: optional
 Build-Depends: debhelper (>= 6)
 Build-Depends-Indep: unicode-data, bzip2, python-support (>= 0.6),
-	python-sqlalchemy (>= 0.4.3), python-pysqlite2
+	python-sqlalchemy (>= 0.4.3), python-pysqlite2, python-beautifulsoup
 Standards-Version: 3.8.0
 Homepage: http://ichi2.net/anki
 
@@ -13,7 +13,7 @@ Architecture: all
 Section: misc
 Depends: python-qt4 (>= 4.4), python-simplejson (>= 1.7.3),
 	python-sqlalchemy (>= 0.4.3), python-pysqlite2 (>= 2.3.0),
-        python-sip4-dev, python-qt4-dev
+        python-sip4-dev, python-qt4-dev, python-beautifulsoup
 Recommends: python-matplotlib
 Suggests: dvipng, mplayer, lame, sox, python-pyaudio
 Description: a friendly, intelligent spaced repetition flashcard program
